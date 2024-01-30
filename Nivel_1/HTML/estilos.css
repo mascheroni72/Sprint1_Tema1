@@ -1,0 +1,84 @@
+* {
+    margin:10px;
+    padding:10px;
+    box-sizing:border-box;
+}
+.contenedorP{
+    display:flex;
+    flex-flow: column nowrap;
+    max-width:1200px;   
+}
+    .header{
+        background: #000;
+        flex-flow: column nowrap;    
+    }
+        .menu{
+        background: #FE7A36;
+        display:flex;
+        flex-flow: nowrap;
+        height: 100 px;
+        }
+            .logo{
+                background: #3652AD;
+                flex: 1 1 auto;
+            }
+            .nav{
+                background: #3652AD;
+                flex: 5 1 auto;
+            }
+            .social{
+                background: #3652AD;
+                flex: 1 1 auto;
+            }
+        .texto-principal {
+                background:#F8E559;
+        }
+            h1{
+                background:#864AF9 ;
+            }
+    .section{
+        background: #000;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+        .articulos{
+            background: #647D87;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #F6D776;
+                flex: 1 1 40%;
+            }
+            .navegacion{
+                background: #864AF9;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #7E2553;
+            flex:1 1 auto;
+        }
+            .columna{
+                background: #FAEF5D ;
+            }
+    .footer {
+        background: #000;
+    }
+            .pie{
+                background: #FF004D;
+            }
+@media only screen and (max-width:800px){
+    .section {
+        flex-direction: column;
+        background: #238c0e;
+    }
+}
+@media only screen and (max-width:400px){
+    .menu{
+        flex-direction:column; 
+    }
+    .articulos {
+        flex-direction: column;     
+    }
+}
